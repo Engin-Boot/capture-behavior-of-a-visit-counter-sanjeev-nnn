@@ -2,7 +2,7 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given a calender and a sensor which is working fine
+  Given A calendar and a sensor which is working fine
   When patient visits on a working day or holiday
   Then increment the "count" varaible for each category
 
