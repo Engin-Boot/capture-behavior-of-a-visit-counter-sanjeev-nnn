@@ -3,12 +3,12 @@
 Scenario: Recover across restarts of the server
 that runs the visit-counter
 
-  Given
-  When
-  Then
+  Given There is a server containing visitor details
+  When The server restarts
+  Then Recover visitor detail from backup.
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
-  Given
-  When
-  Then
+  Given Sensor has tendency to go offline
+  When Sensor goes offlin
+  Then Keep a record of all scanned bar codes.
