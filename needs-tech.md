@@ -10,5 +10,5 @@ that runs the visit-counter
 Scenario: Reconcile counts if the sensor is offline for a while
 
   Given Sensor has tendency to go offline
-  When Sensor goes offlin
+  When Sensor goes offline
   Then Keep a record of every scanned bar codes.
