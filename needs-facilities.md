@@ -2,12 +2,12 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given
-  When
-  Then
+  Given a counter sensor that's turned on
+  When the patients enters the hospital
+  Then count gets incremented in the sensor.
 
 Scenario: Alert when seating capacity is full
 
-  Given
-  When
-  Then
+  Given the sensor works fine
+  When the seating capacity is full
+  Then an alert in the sensor can be noted.
