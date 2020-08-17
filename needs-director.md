@@ -4,7 +4,7 @@ Scenario: Show patient visits during working days and holidays
 
   Given A calendar and a sensor which is working
   When patient visits on a working day or holiday
-  Then increment the count varaible for each category.
+  Then increment the count variable for each category.
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
